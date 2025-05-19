@@ -27,7 +27,7 @@ Cakupan proyek ini mencakup tahapan-tahapan berikut:
 7. Visualisasi Hasil: Mempresentasikan hasil evaluasi model dan insights dari feature importance dalam bentuk visual yang mudah dipahami.
 Proyek ini **tidak mencakup** implementasi model ke dalam sistem produksi atau pengembangan strategi retensi karyawan berdasarkan hasil model (ini merupakan langkah lanjutan setelah proyek data science ini selesai). Fokus utamanya adalah membangun dan mengevaluasi model prediktif.
 
-# **3. Persiapan**
+# ** Persiapan**
 ahapan persiapan yang diperlukan untuk menjalankan proyek ini meliputi:
 1. Akses ke Data: Memastikan akses ke file data karyawan (`employee_data.csv`). Dalam kode ini, data diakses langsung dari URL GitHub, yang memerlukan koneksi internet.
 2. Lingkungan Pengembangan: Menggunakan lingkungan yang mendukung eksekusi kode Python, seperti Google Colaboratory atau Jupyter Notebook.
