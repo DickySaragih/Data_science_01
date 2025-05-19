@@ -28,7 +28,7 @@ Cakupan proyek ini mencakup tahapan-tahapan berikut:
 Proyek ini **tidak mencakup** implementasi model ke dalam sistem produksi atau pengembangan strategi retensi karyawan berdasarkan hasil model (ini merupakan langkah lanjutan setelah proyek data science ini selesai). Fokus utamanya adalah membangun dan mengevaluasi model prediktif.
 
 # **Persiapan**
-ahapan persiapan yang diperlukan untuk menjalankan proyek ini meliputi:
+Tahapan persiapan yang diperlukan untuk menjalankan proyek ini meliputi:
 1. Akses ke Data: Memastikan akses ke file data karyawan (`employee_data.csv`). Dalam kode ini, data diakses langsung dari URL GitHub, yang memerlukan koneksi internet.
 2. Lingkungan Pengembangan: Menggunakan lingkungan yang mendukung eksekusi kode Python, seperti Google Colaboratory atau Jupyter Notebook.
 3. Instalasi Library yang Dibutuhkan: Memastikan bahwa semua library Python yang digunakan dalam kode sudah terinstal. Berdasarkan import dalam kode, library yang dibutuhkan adalah:
@@ -44,4 +44,15 @@ ahapan persiapan yang diperlukan untuk menjalankan proyek ini meliputi:
 4. Pemahaman Dasar Python: Memiliki pemahaman dasar tentang sintaks dan struktur bahasa pemrograman Python.
 5. Pemahaman Dasar Konsep Data Science dan Machine Learning: Mengerti konsep dasar tentang data cleaning, preprocessing, pemodelan klasifikasi, dan metrik evaluasi.
 6. Spesifikasi Komputer (Opsional, namun direkomendasikan untuk dataset yang lebih besar): Memiliki komputer atau lingkungan cloud dengan sumber daya (CPU, RAM) yang cukup untuk memuat dan memproses dataset, meskipun dataset dalam contoh ini relatif kecil.
+**Setup environtment yang digunakan dalam proyek sebagai berikut**
 
+1.  **pandas:** Untuk manipulasi dan analisis data (membaca CSV, membersihkan data, transformasi, dll.).
+2.  **numpy:** Untuk operasi numerik, terutama dalam konteks array dan perhitungan matematis.
+3.  **matplotlib.pyplot:** Untuk membuat visualisasi data (plot, grafik).
+4.  **seaborn:** Untuk membuat visualisasi statistik yang lebih menarik dan informatif.
+5.  **sklearn (scikit-learn):** Pustaka utama untuk Machine Learning, digunakan untuk:
+    *   `sklearn.model_selection.train_test_split`: Membagi data menjadi set pelatihan dan pengujian.
+    *   `sklearn.preprocessing.LabelEncoder`: Melakukan encoding pada variabel kategorikal.
+    *   `sklearn.preprocessing.StandardScaler`: Melakukan standarisasi/normalisasi pada fitur numerik.
+    *   `sklearn.ensemble.RandomForestClassifier`: Membangun model klasifikasi Random Forest.
+    *   `sklearn.metrics`: Menghitung metrik evaluasi model (classification_report, confusion_matrix, accuracy_score).
