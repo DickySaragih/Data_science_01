@@ -8,24 +8,21 @@ Sebagai bagian dari proyek ini, telah disediakan dataset terkait informasi karya
 
 ### Permasalahan Bisnis.
 
-Berdasarkan kode yang dianalisis, permasalahan bisnis utama yang dihadapi adalah **tingginya tingkat perputaran karyawan (employee attrition)** di perusahaan edutech. Tingkat perputaran karyawan yang tinggi dapat menyebabkan berbagai kerugian bagi perusahaan, antara lain:
-1. Biaya Rekrutmen dan Pelatihan: Perusahaan harus mengeluarkan biaya yang signifikan untuk mencari, merekrut, dan melatih karyawan baru untuk menggantikan karyawan yang pergi.
-2. Hilangnya Pengetahuan dan Pengalaman: Karyawan yang berpengalaman membawa pengetahuan dan keahlian berharga. Kepergian mereka dapat menyebabkan hilangnya institutional knowledge yang sulit digantikan.
-3. Penurunan Produktivitas: Periode transisi saat karyawan baru beradaptasi dapat menurunkan produktivitas tim secara keseluruhan.
-4. Peurunan Moral Karyawan: Tingkat perputaran yang tinggi dapat menciptakan ketidakstabilan dan menurunkan moral karyawan yang bertahan.
-5. Citra Perusahaan yang Negatif: Tingkat perputaran yang tinggi dapat merusak reputasi perusahaan di mata calon karyawan. 
-Perusahaan edutech ini ingin memahami faktor-faktor apa saja yang paling berkontribusi terhadap keputusan karyawan untuk keluar, dan yang terpenting, mereka ingin dapat memprediksi karyawan mana yang berisiko tinggi untuk keluar sehingga tindakan pencegahan proaktif dapat diambil untuk mempertahankan talenta terbaik mereka.
+Permasalahan utama yang dihadapi perusahaan adalah:
+1. Tingginya tingkat attrition (>10%) yang menunjukkan ketidakstabilan dalam retensi karyawan.
+2. Kurangnya pemahaman mengenai faktor-faktor utama yang menyebabkan karyawan meninggalkan perusahaan.
+3. Minimnya sistem monitoring yang mudah dipahami untuk membantu pengambilan keputusan strategis oleh manajemen HR.
 
 # **Cakupan Proyek**
-Cakupan proyek ini mencakup tahapan-tahapan berikut:
-1. Pengumpulan Data:Menggunakan data karyawan yang telah dikumpulkan oleh perusahaan. Dalam kasus ini, data diperoleh dari file CSV yang di-host di GitHub.
-2. Pemahaman Data (Data Understanding): Melakukan eksplorasi awal data untuk memahami struktur, tipe data, distribusi variabel, dan mengidentifikasi potensi masalah seperti missing values. Memvisualisasikan hubungan antar variabel, khususnya dengan variabel target (Attrition).
-3. Persiapan Data (Data Preparation): Membersihkan dan mengubah data agar siap untuk dimodelkan. Ini termasuk menangani missing values, menghapus kolom yang tidak relevan, melakukan encoding pada fitur kategorikal, dan melakukan normalisasi fitur numerik. Data juga akan dibagi menjadi set pelatihan dan pengujian.
-5. Pemodelan (Modeling): Membangun model machine learning menggunakan algoritma klasifikasi (dalam kasus ini, Random Forest) untuk memprediksi kemungkinan karyawan mengalami Attrition.
-6. Evaluasi Model (Evaluation): Mengukur kinerja model menggunakan metrik evaluasi yang relevan seperti Akurasi, Classification Report (Precision, Recall, F1-score), dan Confusion Matrix untuk menilai seberapa baik model dapat memprediksi kelas Attrition.
-6. Analisis Hasil dan Interpretasi (Implicit in the code): Memahami faktor-faktor yang paling berkontribusi terhadap prediksi model melalui analisis feature importance. Hasil ini dapat memberikan wawasan bisnis tentang faktor-faktor yang mendorong Attrition.
-7. Visualisasi Hasil: Mempresentasikan hasil evaluasi model dan insights dari feature importance dalam bentuk visual yang mudah dipahami.
-Proyek ini **tidak mencakup** implementasi model ke dalam sistem produksi atau pengembangan strategi retensi karyawan berdasarkan hasil model (ini merupakan langkah lanjutan setelah proyek data science ini selesai). Fokus utamanya adalah membangun dan mengevaluasi model prediktif.
+Proyek ini dirancang untuk menjawab dan memvisualisasikan beberapa pertanyaan kunci yang ditujukan untuk memahami fenomena attrition di perusahaan Jaya Jaya Maju. Adapun pertanyaan dan cakupan analisis adalah sebagai berikut:
+1. Apakah terdapat hubungan antara lembur (OverTime) dan tingkat attrition?
+Cakupan: Menganalisis distribusi attrition berdasarkan status lembur karyawan.
+
+2. Bagaimana pengaruh kepuasan kerja (Job Satisfaction) terhadap kemungkinan karyawan keluar?
+Cakupan: Menganalisis tingkat rata-rata attrition berdasarkan skor kepuasan kerja.
+
+3. Apakah lama bekerja dan waktu sejak promosi terakhir memengaruhi keputusan untuk keluar?
+Cakupan: Membuat heatmap dua variabel waktu (YearsAtCompany dan YearsSinceLastPromotion) terhadap rasio attrition.
 
 # **Persiapan**
 Tahapan persiapan yang diperlukan untuk menjalankan proyek ini meliputi:
