@@ -120,14 +120,17 @@ Visualisasi yang digunakan pada dashboard ini meliputi bar chart, line chart, da
 **kesimpulan**
 Melalui proyek analisis prediktif ini, perusahaan Jaya Jaya Maju berhasil memperoleh pemahaman yang lebih mendalam mengenai penyebab utama tingginya tingkat attrition di lingkungan kerja. Dengan menggabungkan teknik data science, machine learning (Random Forest), dan dashboard interaktif Metabase, tim HR dapat mengidentifikasi faktor risiko utama secara kuantitatif dan visual.
 Temuan Utama dari Dashboard Visualisasi:
-1. Apakah terdapat hubungan antara lembur (OverTime) dan tingkat attrition?:
+
+**1. Apakah terdapat hubungan antara lembur (OverTime) dan tingkat attrition?:**
 - Berdasarkan grafik pertama, terlihat bahwa karyawan yang bekerja lembur (OverTime = Yes) memiliki tingkat attrition jauh lebih tinggi dibandingkan yang tidak lembur.
 - Meskipun total karyawan yang lembur lebih sedikit, jumlah attrition-nya sangat tinggi, dengan attrition rate yang jauh lebih besar dibandingkan kelompok non-lembur.
 - Hal ini menandakan bahwa kelelahan kerja akibat lembur menjadi faktor penting dalam keputusan resign.
-2.Apakah karyawan dengan penghasilan bulanan rendah lebih rentan mengalami attrition dibandingkan karyawan dengan penghasilan tinggi?
+- 
+**2.Apakah karyawan dengan penghasilan bulanan rendah lebih rentan mengalami attrition dibandingkan karyawan dengan penghasilan tinggi?**
 - Visualisasi kedua menunjukkan distribusi attrition berdasarkan lama kerja sejak promosi terakhir.
 - Karyawan dengan masa kerja 3 tahun sejak promosi terakhir memiliki proporsi attrition terbesar (19.07%), disusul oleh mereka yang sudah 15 tahun dan 1 tahun sejak promosi terakhir. Ini menunjukkan adanya pola bahwa karyawan yang terlalu lama tidak dipromosikan atau tidak mendapat pengakuan atas kontribusinya lebih cenderung untuk meninggalkan perusahaan.
-3. Apakah lama bekerja dan waktu sejak promosi terakhir memengaruhi keputusan untuk keluar?
+- 
+**3. Apakah lama bekerja dan waktu sejak promosi terakhir memengaruhi keputusan untuk keluar?**
 - Dari grafik ketiga, karyawan dengan penghasilan rendah (Low Income) memiliki tingkat attrition tertinggi dibandingkan kelompok Medium dan High Income.
 - Hal ini mengindikasikan bahwa ketidakpuasan finansial menjadi pemicu signifikan terhadap turnover, dan peningkatan kompensasi dapat menjadi strategi retensi yang efektif.
 
