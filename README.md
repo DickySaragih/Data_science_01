@@ -19,6 +19,7 @@ Cakupan: Membuat heatmap dua variabel waktu (YearsAtCompany dan YearsSinceLastPr
 
 # **Cakupan Proyek**
 Untuk menjawab permasalahan bisnis yang telah diidentifikasi terkait tingginya tingkat attrition di perusahaan Jaya Jaya Maju, proyek ini akan mencakup beberapa tahapan analisis yang sistematis dan berbasis data. Berikut adalah cakupan proyek yang disusun secara bertahap:
+
 **1. Analisis Hubungan antara Lembur (OverTime) dan Tingkat Attrition**
 Tujuan:
 Mengidentifikasi apakah lembur memiliki korelasi kuat terhadap keputusan karyawan untuk meninggalkan perusahaan.
