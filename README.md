@@ -101,16 +101,15 @@ Meskipun tidak secara eksplisit ditunjukkan di *code* yang diberikan, tahap sela
 Tahap persiapan data melibatkan serangkaian transformasi untuk membuat data siap digunakan oleh algoritma machine learning. Dalam *code* yang diberikan, salah satu langkah yang dilakukan adalah mengubah tipe data kolom Attrition menjadi integer (df['Attrition'] = df['Attrition'].astype(int)) agar sesuai dengan format yang dibutuhkan oleh model klasifikasi. Selain itu, kolom-kolom yang dianggap tidak relevan seperti EmployeeId, Over18, StandardHours, dan EmployeeCount dihapus (df.drop(columns=cols_to_drop, inplace=True, errors='ignore')) untuk mengurangi dimensi data dan menghilangkan fitur yang tidak informatif. Tahap persiapan data juga biasanya mencakup penanganan variabel kategorikal (misalnya dengan *encoding* seperti *One-Hot Encoding* atau *Label Encoding*) dan *scaling* fitur numerik (misalnya menggunakan StandardScaler) untuk memastikan bahwa semua fitur berada dalam skala yang serupa, yang dapat meningkatkan kinerja beberapa algoritma machine learning. Data kemudian dipisahkan menjadi data pelatihan (train_test_split) untuk melatih model dan data pengujian untuk mengevaluasi kinerja model pada data yang belum pernah dilihat sebelumnya.
 6. Spesifikasi Komputer (Opsional, namun direkomendasikan untuk dataset yang lebih besar): Memiliki komputer atau lingkungan cloud dengan sumber daya (CPU, RAM) yang cukup untuk memuat dan memproses dataset, meskipun dataset dalam contoh ini relatif kecil.
 **Setup environtment yang digunakan dalam proyek sebagai berikut**
-1.  **pandas:** Untuk manipulasi dan analisis data (membaca CSV, membersihkan data, transformasi, dll.).
-2.  **numpy:** Untuk operasi numerik, terutama dalam konteks array dan perhitungan matematis.
-3.  **matplotlib.pyplot:** Untuk membuat visualisasi data (plot, grafik).
-4.  **seaborn:** Untuk membuat visualisasi statistik yang lebih menarik dan informatif.
-5.  **sklearn (scikit-learn):** Pustaka utama untuk Machine Learning, digunakan untuk:
-    *   `sklearn.model_selection.train_test_split`: Membagi data menjadi set pelatihan dan pengujian.
-    *   `sklearn.preprocessing.LabelEncoder`: Melakukan encoding pada variabel kategorikal.
-    *   `sklearn.preprocessing.StandardScaler`: Melakukan standarisasi/normalisasi pada fitur numerik.
-    *   `sklearn.ensemble.RandomForestClassifier`: Membangun model klasifikasi Random Forest.
-    *   `sklearn.metrics`: Menghitung metrik evaluasi model (classification_report, confusion_matrix, accuracy_score).
+  1. **pandas:** Untuk manipulasi dan analisis data (membaca CSV, membersihkan data, transformasi, dll.).
+  2. **numpy:** Untuk operasi numerik, terutama dalam konteks array dan perhitungan matematis.
+  3. **seaborn:** Untuk membuat visualisasi statistik yang lebih menarik dan informatif.
+  4. **sklearn (scikit-learn):** Pustaka utama untuk Machine Learning, digunakan untuk:
+     - `sklearn.model_selection.train_test_split`: Membagi data menjadi set pelatihan dan pengujian.\
+     - `sklearn.preprocessing.LabelEncoder`: Melakukan encoding pada variabel kategorikal.
+     - `sklearn.preprocessing.StandardScaler`: Melakukan standarisasi/normalisasi pada fitur numerik.
+     - `sklearn.ensemble.RandomForestClassifier`: Membangun model klasifikasi Random Forest.
+     - `sklearn.metrics`: Menghitung metrik evaluasi model (classification_report, confusion_matrix, accuracy_score).
       
 # Business Dashboard
 Perusahaan Jaya Jaya Maju, sebagai salah satu perusahaan multinasional dengan lebih dari 1.000 karyawan, saat ini menghadapi tantangan serius dalam mengelola tenaga kerjanya. Salah satu indikator utama yang menjadi perhatian adalah tingginya angka attrition atau tingkat keluar-masuk karyawan yang telah mencapai lebih dari 10%. Untuk membantu departemen Human Resources (HR) dalam memahami akar permasalahan tersebut, telah dikembangkan sebuah business dashboard interaktif menggunakan Metabase. Dashboard ini menyajikan analisis menyeluruh terhadap berbagai faktor yang dapat memengaruhi keputusan karyawan untuk keluar dari perusahaan.
