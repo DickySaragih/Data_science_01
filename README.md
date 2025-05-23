@@ -19,7 +19,7 @@ Cakupan: Membuat heatmap dua variabel waktu (YearsAtCompany dan YearsSinceLastPr
 
 # **Cakupan Proyek**
 Untuk menjawab permasalahan bisnis yang telah diidentifikasi terkait tingginya tingkat attrition di perusahaan Jaya Jaya Maju, proyek ini akan mencakup beberapa tahapan analisis yang sistematis dan berbasis data. Berikut adalah cakupan proyek yang disusun secara bertahap:
-1. Analisis Hubungan antara Lembur (OverTime) dan Tingkat Attrition
+**1. Analisis Hubungan antara Lembur (OverTime) dan Tingkat Attrition**
 Tujuan:
 Mengidentifikasi apakah lembur memiliki korelasi kuat terhadap keputusan karyawan untuk meninggalkan perusahaan.
 Langkah-langkah:
@@ -28,7 +28,7 @@ Langkah-langkah:
 - Visualisasi komparatif melalui grafik bar kombinasi (total karyawan, jumlah attrition, dan rasio attrition).
 - Interpretasi temuan dan implikasi kebijakan jam kerja.
 
-  2. Analisis Pengaruh Tingkat Penghasilan terhadap Risiko Attrition
+ **2. Analisis Pengaruh Tingkat Penghasilan terhadap Risiko Attrition**
 Tujuan:
 Mengetahui apakah karyawan dengan penghasilan bulanan rendah cenderung lebih rentan mengalami attrition.
 Langkah-langkah:
@@ -37,7 +37,7 @@ Langkah-langkah:
 = Visualisasi distribusi pendapatan dan attrition dalam grafik komparatif.
 = Identifikasi tingkat kerentanan attrition berdasarkan tingkat penghasilan.
 
-3. Evaluasi Pengaruh Lama Bekerja dan Promosi terhadap Keputusan Keluar
+**3. Evaluasi Pengaruh Lama Bekerja dan Promosi terhadap Keputusan Keluar**
 Tujuan:
 Menganalisis apakah stagnasi karier (jarangnya promosi) dan lamanya masa kerja berpengaruh terhadap attrition.
 Langkah-langkah:
@@ -46,7 +46,7 @@ Langkah-langkah:
 - Pemetaan dalam bentuk heatmap dua dimensi.
 - Interpretasi pola stagnasi dan kemungkinan kelelahan kerja atau ketidakpuasan karier.
 
-4. Penerapan Model Machine Learning (Random Forest)
+**4. Penerapan Model Machine Learning (Random Forest)**
 Tujuan:
 Membangun model prediktif untuk mengidentifikasi karyawan dengan risiko tinggi attrition.
 Cakupan:
@@ -55,7 +55,7 @@ Persiapan dataset dan preprocessing.
 - Evaluasi performa model (akurasi, recall, precision).
 - Identifikasi fitur-fitur yang paling memengaruhi attrition.
 
-5. Penyusunan Dashboard Interaktif di Metabase
+**5. Penyusunan Dashboard Interaktif di Metabase**
 Tujuan:
 Menyediakan alat bantu visualisasi real-time untuk HR dalam memantau dan mengambil keputusan berbasis data.
 Fitur Dashboard:
