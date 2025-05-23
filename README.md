@@ -68,7 +68,23 @@ Tahap persiapan data melibatkan serangkaian transformasi untuk membuat data siap
 Perusahaan Jaya Jaya Maju, sebagai salah satu perusahaan multinasional dengan lebih dari 1.000 karyawan, saat ini menghadapi tantangan serius dalam mengelola tenaga kerjanya. Salah satu indikator utama yang menjadi perhatian adalah tingginya angka attrition atau tingkat keluar-masuk karyawan yang telah mencapai lebih dari 10%. Untuk membantu departemen Human Resources (HR) dalam memahami akar permasalahan tersebut, telah dikembangkan sebuah business dashboard interaktif menggunakan Metabase. Dashboard ini menyajikan analisis menyeluruh terhadap berbagai faktor yang dapat memengaruhi keputusan karyawan untuk keluar dari perusahaan.
 Dashboard ini dirancang dengan tiga fokus utama analisis. Pertama, visualisasi distribusi attrition berdasarkan departemen, jenis kelamin, dan status lembur (OverTime). Dari data yang ditampilkan, dapat dilihat bahwa karyawan di beberapa departemen tertentu, seperti Sales dan Research & Development, memiliki tingkat attrition lebih tinggi, terutama jika mereka juga bekerja lembur secara rutin. Kedua, dashboard menampilkan hubungan antara kepuasan kerja (JobSatisfaction) dan tingkat attrition, yang menunjukkan bahwa karyawan dengan tingkat kepuasan rendah memiliki kecenderungan lebih besar untuk meninggalkan perusahaan. Ketiga, analisis juga dilakukan terhadap hubungan antara masa kerja (YearsAtCompany), waktu sejak promosi terakhir (YearsSinceLastPromotion), dan tingkat attrition. Hasilnya menunjukkan bahwa karyawan yang telah bekerja cukup lama tanpa mendapatkan promosi memiliki risiko keluar yang lebih tinggi.
 Visualisasi yang digunakan pada dashboard ini meliputi bar chart, line chart, dan heatmap, serta dilengkapi dengan fitur filter interaktif seperti Department, Gender, dan OverTime. Hal ini memudahkan manajemen untuk melihat data berdasarkan kelompok tertentu secara real-time. Dengan dashboard ini, HR dapat lebih cepat mengenali pola yang mengarah pada tingginya attrition, serta mengambil langkah strategis seperti peningkatan kesejahteraan, kebijakan promosi yang lebih adil, dan pengurangan beban kerja lembur. Secara keseluruhan, dashboard ini menjadi alat bantu penting dalam pengambilan keputusan berbasis data (data-driven decision making) dan meningkatkan retensi karyawan di Jaya Jaya Maju.
+
+**kesimpulan**
+Melalui proyek analisis prediktif ini, perusahaan Jaya Jaya Maju berhasil memperoleh pemahaman yang lebih mendalam mengenai penyebab utama tingginya tingkat attrition di lingkungan kerja. Dengan menggabungkan teknik data science, machine learning (Random Forest), dan dashboard interaktif Metabase, tim HR dapat mengidentifikasi faktor risiko utama secara kuantitatif dan visual.
+Temuan Utama dari Dashboard Visualisasi:
+1. Apakah terdapat hubungan antara lembur (OverTime) dan tingkat attrition?:
+- Berdasarkan grafik pertama, terlihat bahwa karyawan yang bekerja lembur (OverTime = Yes) memiliki tingkat attrition jauh lebih tinggi dibandingkan yang tidak lembur.
+- Meskipun total karyawan yang lembur lebih sedikit, jumlah attrition-nya sangat tinggi, dengan attrition rate yang jauh lebih besar dibandingkan kelompok non-lembur.
+- Hal ini menandakan bahwa kelelahan kerja akibat lembur menjadi faktor penting dalam keputusan resign.
+2.Apakah karyawan dengan penghasilan bulanan rendah lebih rentan mengalami attrition dibandingkan karyawan dengan penghasilan tinggi?
+- Visualisasi kedua menunjukkan distribusi attrition berdasarkan lama kerja sejak promosi terakhir.
+- Karyawan dengan masa kerja 3 tahun sejak promosi terakhir memiliki proporsi attrition terbesar (19.07%), disusul oleh mereka yang sudah 15 tahun dan 1 tahun sejak promosi terakhir. Ini menunjukkan adanya pola bahwa karyawan yang terlalu lama tidak dipromosikan atau tidak mendapat pengakuan atas kontribusinya lebih cenderung untuk meninggalkan perusahaan.
+3. Apakah lama bekerja dan waktu sejak promosi terakhir memengaruhi keputusan untuk keluar?
+- Dari grafik ketiga, karyawan dengan penghasilan rendah (Low Income) memiliki tingkat attrition tertinggi dibandingkan kelompok Medium dan High Income.
+- Hal ini mengindikasikan bahwa ketidakpuasan finansial menjadi pemicu signifikan terhadap turnover, dan peningkatan kompensasi dapat menjadi strategi retensi yang efektif.
+
+Tingkat Penghasilan Bulanan:
 **akses akun metabase**
 **email : dickysaragih050901@gmail.com
 password : dickycandidsaragih5**
-berikut merupakan link dashboard: https://localhost:3000/public/dashboard/e15e027b-c6d8-40e3-9abb-e806f1ef6047
+berikut merupakan link dashboard: https://localhost:3000/public/dashboard/e2427448-b421-418e-99cc-9b4c6c605660
