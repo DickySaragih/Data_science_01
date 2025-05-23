@@ -8,12 +8,6 @@ Sebagai bagian dari proyek ini, telah disediakan dataset terkait informasi karya
 
 ### Permasalahan Bisnis.
 
-Permasalahan utama yang dihadapi perusahaan adalah:
-1. Tingginya tingkat attrition (>10%) yang menunjukkan ketidakstabilan dalam retensi karyawan.
-2. Kurangnya pemahaman mengenai faktor-faktor utama yang menyebabkan karyawan meninggalkan perusahaan.
-3. Minimnya sistem monitoring yang mudah dipahami untuk membantu pengambilan keputusan strategis oleh manajemen HR.
-
-# **Cakupan Proyek**
 Proyek ini dirancang untuk menjawab dan memvisualisasikan beberapa pertanyaan kunci yang ditujukan untuk memahami fenomena attrition di perusahaan Jaya Jaya Maju. Adapun pertanyaan dan cakupan analisis adalah sebagai berikut:
 1. Apakah terdapat hubungan antara lembur (OverTime) dan tingkat attrition?
 Cakupan: Menganalisis distribusi attrition berdasarkan status lembur karyawan.
@@ -22,6 +16,60 @@ Cakupan: Menganalisis distribusi attrition berdasarkan status lembur karyawan.
 
 3. Apakah lama bekerja dan waktu sejak promosi terakhir memengaruhi keputusan untuk keluar?
 Cakupan: Membuat heatmap dua variabel waktu (YearsAtCompany dan YearsSinceLastPromotion) terhadap rasio attrition.
+
+# **Cakupan Proyek**
+Untuk menjawab permasalahan bisnis yang telah diidentifikasi terkait tingginya tingkat attrition di perusahaan Jaya Jaya Maju, proyek ini akan mencakup beberapa tahapan analisis yang sistematis dan berbasis data. Berikut adalah cakupan proyek yang disusun secara bertahap:
+1. Analisis Hubungan antara Lembur (OverTime) dan Tingkat Attrition
+Tujuan:
+Mengidentifikasi apakah lembur memiliki korelasi kuat terhadap keputusan karyawan untuk meninggalkan perusahaan.
+Langkah-langkah:
+- Menghitung jumlah karyawan berdasarkan status lembur (Yes/No).
+- Mengukur tingkat attrition pada masing-masing kelompok lembur.
+- Visualisasi komparatif melalui grafik bar kombinasi (total karyawan, jumlah attrition, dan rasio attrition).
+- Interpretasi temuan dan implikasi kebijakan jam kerja.
+
+  2. Analisis Pengaruh Tingkat Penghasilan terhadap Risiko Attrition
+Tujuan:
+Mengetahui apakah karyawan dengan penghasilan bulanan rendah cenderung lebih rentan mengalami attrition.
+Langkah-langkah:
+- Pengelompokan data berdasarkan kategori pendapatan (Low, Medium, High Income).
+- Perhitungan jumlah attrition dan tingkat attrition di masing-masing kelompok.
+= Visualisasi distribusi pendapatan dan attrition dalam grafik komparatif.
+= Identifikasi tingkat kerentanan attrition berdasarkan tingkat penghasilan.
+
+3. Evaluasi Pengaruh Lama Bekerja dan Promosi terhadap Keputusan Keluar
+Tujuan:
+Menganalisis apakah stagnasi karier (jarangnya promosi) dan lamanya masa kerja berpengaruh terhadap attrition.
+Langkah-langkah:
+- Eksplorasi dua variabel utama: YearsAtCompany dan YearsSinceLastPromotion.
+- Perhitungan rasio attrition pada kombinasi variabel tersebut.
+- Pemetaan dalam bentuk heatmap dua dimensi.
+- Interpretasi pola stagnasi dan kemungkinan kelelahan kerja atau ketidakpuasan karier.
+
+4. Penerapan Model Machine Learning (Random Forest)
+Tujuan:
+Membangun model prediktif untuk mengidentifikasi karyawan dengan risiko tinggi attrition.
+Cakupan:
+Persiapan dataset dan preprocessing.
+- Pelatihan model Random Forest Classifier.
+- Evaluasi performa model (akurasi, recall, precision).
+- Identifikasi fitur-fitur yang paling memengaruhi attrition.
+
+5. Penyusunan Dashboard Interaktif di Metabase
+Tujuan:
+Menyediakan alat bantu visualisasi real-time untuk HR dalam memantau dan mengambil keputusan berbasis data.
+Fitur Dashboard:
+- Filter berdasarkan departemen, gender, dan status lembur.
+- Visualisasi attrition berdasarkan berbagai dimensi: lembur, penghasilan, dan karier.
+- Insight ringkas per faktor risiko.
+
+**Ringkasan**
+Proyek ini menyasar aspek-aspek penting dalam manajemen SDM yang terbukti berkontribusi terhadap attrition, dengan cakupan analisis komprehensif yang menggabungkan:
+- Analisis eksploratif visual
+- Model prediktif machine learning
+- Visualisasi dashboard interaktif
+- Rencana tindakan berbasis insight
+Cakupan proyek ini dirancang untuk memberikan dasar yang kuat bagi pengambilan keputusan strategis HR dalam upaya meningkatkan retensi, kepuasan kerja, dan stabilitas organisasi.
 
 # **Persiapan**
 Tahapan persiapan yang diperlukan untuk menjalankan proyek ini meliputi:
