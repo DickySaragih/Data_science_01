@@ -18,8 +18,7 @@ Proyek ini dirancang untuk menjawab dan memvisualisasikan beberapa pertanyaan ku
 1. Apakah terdapat hubungan antara lembur (OverTime) dan tingkat attrition?
 Cakupan: Menganalisis distribusi attrition berdasarkan status lembur karyawan.
 
-2. Bagaimana pengaruh kepuasan kerja (Job Satisfaction) terhadap kemungkinan karyawan keluar?
-Cakupan: Menganalisis tingkat rata-rata attrition berdasarkan skor kepuasan kerja.
+2. Apakah karyawan dengan penghasilan bulanan rendah lebih rentan mengalami attrition dibandingkan karyawan dengan penghasilan tinggi?
 
 3. Apakah lama bekerja dan waktu sejak promosi terakhir memengaruhi keputusan untuk keluar?
 Cakupan: Membuat heatmap dua variabel waktu (YearsAtCompany dan YearsSinceLastPromotion) terhadap rasio attrition.
@@ -39,10 +38,21 @@ Tahapan persiapan yang diperlukan untuk menjalankan proyek ini meliputi:
    `RandomForestClassifier` dari `sklearn.ensemble`
    `classification_report`, `confusion_matrix`, `accuracy_score` dari `sklearn.metrics`
 4. Pemahaman Dasar Python: Memiliki pemahaman dasar tentang sintaks dan struktur bahasa pemrograman Python.
-5. Pemahaman Dasar Konsep Data Science dan Machine Learning: Mengerti konsep dasar tentang data cleaning, preprocessing, pemodelan klasifikasi, dan metrik evaluasi.
+5. Pemahaman Dasar Konsep Data Science dan Machine Learning adapun proses cakupanya sebagai berikut:
+**Import Library:**
+Tahap pertama dalam proyek ini adalah mengimpor library Python yang dibutuhkan. Library seperti pandas digunakan untuk manipulasi dan analisis data tabular, numpy untuk komputasi numerik, matplotlib.pyplot dan seaborn untuk visualisasi data. Selain itu, library dari sklearn diimpor untuk keperluan pemisahan data, *preprocessing*, pemodelan, dan evaluasi model. Penggunaan library ini sangat penting karena menyediakan fungsi-fungsi siap pakai yang mempercepat dan mempermudah proses pengolahan data, mulai dari membaca data, membersihkan data, hingga membangun dan mengevaluasi model machine learning.
+**Load Dataset:**
+Dataset yang akan dianalisis dimuat ke dalam *environment* kerja. Dalam proyek ini, dataset dimuat langsung dari *repository* GitHub menggunakan URL. Memuat dataset adalah langkah krusial karena merupakan sumber data utama yang akan diolah. Proses ini memastikan bahwa data tersedia dan dapat diakses untuk tahapan-tahapan berikutnya.
+**Data Understanding:**
+Setelah dataset berhasil dimuat, dilakukan tahap pemahaman data. Langkah ini melibatkan pemeriksaan dasar terhadap struktur dan isi dataset. Informasi yang diperoleh meliputi ukuran dataset (df.shape), tipe data setiap kolom (df.info()), statistik deskriptif kolom numerik (df.describe()), dan jumlah nilai yang hilang (df.isnull().sum()). Tahap pemahaman data ini sangat penting untuk mendapatkan gambaran awal mengenai karakteristik data, mengidentifikasi potensi masalah seperti nilai yang hilang atau tipe data yang tidak sesuai, serta memahami distribusi data. Pemahaman yang baik tentang data akan memandu langkah-langkah selanjutnya dalam proses *preprocessing* dan pemodelan.
+**Cleaning Data:**
+Tahap pembersihan data (data cleaning) dilakukan untuk menangani isu-isu kualitas data yang teridentifikasi pada tahap pemahaman data. Dalam proyek ini, baris-baris yang memiliki nilai kosong pada kolom target Attrition dihapus (df = df.dropna(subset=['Attrition'])). Penghapusan ini dilakukan untuk memastikan bahwa semua *instance* yang digunakan dalam analisis dan pemodelan memiliki label target yang lengkap dan valid, yang krusial untuk pelatihan model klasifikasi.
+**Exploratory Data Analysis (EDA):**
+Meskipun tidak secara eksplisit ditunjukkan di *code* yang diberikan, tahap selanjutnya yang umum dilakukan adalah EDA. EDA bertujuan untuk menggali wawasan mendalam dari data melalui visualisasi dan analisis statistik deskriptif lebih lanjut. EDA dapat mencakup pembuatan histogram untuk melihat distribusi fitur, *boxplot* untuk mengidentifikasi *outlier*, *scatter plot* untuk melihat hubungan antar fitur, serta analisis korelasi. Alasan melakukan EDA adalah untuk memahami pola dalam data, mengidentifikasi hubungan antar variabel, dan menemukan *insight* yang dapat digunakan untuk menginformasikan pilihan fitur dan strategi pemodelan.
+**Data Preparation:**
+Tahap persiapan data melibatkan serangkaian transformasi untuk membuat data siap digunakan oleh algoritma machine learning. Dalam *code* yang diberikan, salah satu langkah yang dilakukan adalah mengubah tipe data kolom Attrition menjadi integer (df['Attrition'] = df['Attrition'].astype(int)) agar sesuai dengan format yang dibutuhkan oleh model klasifikasi. Selain itu, kolom-kolom yang dianggap tidak relevan seperti EmployeeId, Over18, StandardHours, dan EmployeeCount dihapus (df.drop(columns=cols_to_drop, inplace=True, errors='ignore')) untuk mengurangi dimensi data dan menghilangkan fitur yang tidak informatif. Tahap persiapan data juga biasanya mencakup penanganan variabel kategorikal (misalnya dengan *encoding* seperti *One-Hot Encoding* atau *Label Encoding*) dan *scaling* fitur numerik (misalnya menggunakan StandardScaler) untuk memastikan bahwa semua fitur berada dalam skala yang serupa, yang dapat meningkatkan kinerja beberapa algoritma machine learning. Data kemudian dipisahkan menjadi data pelatihan (train_test_split) untuk melatih model dan data pengujian untuk mengevaluasi kinerja model pada data yang belum pernah dilihat sebelumnya.
 6. Spesifikasi Komputer (Opsional, namun direkomendasikan untuk dataset yang lebih besar): Memiliki komputer atau lingkungan cloud dengan sumber daya (CPU, RAM) yang cukup untuk memuat dan memproses dataset, meskipun dataset dalam contoh ini relatif kecil.
 **Setup environtment yang digunakan dalam proyek sebagai berikut**
-
 1.  **pandas:** Untuk manipulasi dan analisis data (membaca CSV, membersihkan data, transformasi, dll.).
 2.  **numpy:** Untuk operasi numerik, terutama dalam konteks array dan perhitungan matematis.
 3.  **matplotlib.pyplot:** Untuk membuat visualisasi data (plot, grafik).
