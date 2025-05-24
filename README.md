@@ -131,11 +131,12 @@ Temuan Utama dari Dashboard Visualisasi:
 - Hal ini mengindikasikan bahwa ketidakpuasan finansial menjadi pemicu signifikan terhadap turnover, dan peningkatan kompensasi dapat menjadi strategi retensi yang efektif.
 
 **kesimpulan**
+
 Dashboard ini dirancang tidak hanya untuk menyajikan data, tetapi juga untuk:
-1. Menjawab pertanyaan bisnis utam
+1. Menjawab pertanyaan bisnis utama
 2. Mengungkap pola tersembunyi yang mungkin diabaikan secara manual
 3. Memberikan tindakan nyata berbasis insight bagi manajemen
-Tingkat Penghasilan Bulanan:
+
 **akses akun metabase**
 **email : dickysaragih050901@gmail.com
 password : dickycandidsaragih5**
