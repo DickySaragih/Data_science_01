@@ -137,7 +137,10 @@ Dashboard ini dirancang tidak hanya untuk menyajikan data, tetapi juga untuk:
 2. Mengungkap pola tersembunyi yang mungkin diabaikan secara manual
 3. Memberikan tindakan nyata berbasis insight bagi manajemen
 
-**akses akun metabase**
-**email : dickysaragih050901@gmail.com
-password : dickycandidsaragih5**
-berikut merupakan link dashboard: https://localhost:3000/public/dashboard/e2427448-b421-418e-99cc-9b4c6c605660
+**Akses akun metabase**
+
+**Email : dickysaragih050901@gmail.com**
+
+**Password : dickycandidsaragih5**
+
+Berikut merupakan link dashboard: https://localhost:3000/public/dashboard/e2427448-b421-418e-99cc-9b4c6c605660
