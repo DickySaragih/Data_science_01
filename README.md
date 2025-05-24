@@ -113,9 +113,10 @@ Tahap persiapan data melibatkan serangkaian transformasi untuk membuat data siap
      - `sklearn.metrics`: Menghitung metrik evaluasi model (classification_report, confusion_matrix, accuracy_score).
       
 # Business Dashboard
-Menyediakan insight visual dan interaktif bagi tim HR dan manajemen untuk memahami faktor-faktor utama yang memengaruhi keputusan karyawan keluar (attrition), serta mendukung pengambilan keputusan strategis berbasis data.
+Pada proses dashboard ini Menyediakan insight visual dan interaktif bagi tim HR dan manajemen untuk memahami faktor-faktor utama yang memengaruhi keputusan karyawan keluar (attrition), serta mendukung pengambilan keputusan strategis berbasis data.
 Melalui proyek analisis prediktif ini, perusahaan Jaya Jaya Maju berhasil memperoleh pemahaman yang lebih mendalam mengenai penyebab utama tingginya tingkat attrition di lingkungan kerja. Dengan menggabungkan teknik data science, machine learning (Random Forest), dan dashboard interaktif Metabase, tim HR dapat mengidentifikasi faktor risiko utama secara kuantitatif dan visual.
 Temuan Utama dari Dashboard Visualisasi:
+
 **1. Apakah terdapat hubungan antara lembur (OverTime) dan tingkat attrition?:**
 - Berdasarkan grafik pertama, terlihat bahwa karyawan yang bekerja lembur (OverTime = Yes) memiliki tingkat attrition jauh lebih tinggi dibandingkan yang tidak lembur.
 - Meskipun total karyawan yang lembur lebih sedikit, jumlah attrition-nya sangat tinggi, dengan attrition rate yang jauh lebih besar dibandingkan kelompok non-lembur.
