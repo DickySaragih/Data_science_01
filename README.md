@@ -74,9 +74,13 @@ Cakupan proyek ini dirancang untuk memberikan dasar yang kuat bagi pengambilan k
 
 # **Persiapan**
 Tahapan persiapan yang diperlukan untuk menjalankan proyek ini meliputi:
-1. Akses ke Data: Memastikan akses ke file data karyawan (`employee_data.csv`). Dalam kode ini, data diakses langsung dari URL GitHub, yang memerlukan koneksi internet.
-2. Lingkungan Pengembangan: Menggunakan lingkungan yang mendukung eksekusi kode Python, seperti Google Colaboratory atau Jupyter Notebook.
-3. Instalasi Library yang Dibutuhkan: Memastikan bahwa semua library Python yang digunakan dalam kode sudah terinstal. Berdasarkan import dalam kode, library yang dibutuhkan adalah:
+1. Akses ke Data: Memastikan akses ke file data karyawan (`employee_data.csv`). Dalam kode ini, data diakses langsung dari URL GitHub, yang memerlukan koneksi internet Dataset tersebut dapat diunduh melalui tautan berikut: [dataset](https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/employee_data.csv)
+2. setup environment: -
+- pip install pipenv
+- pipenv installpipenv shell
+- pip install -r requirements.txt
+4. Lingkungan Pengembangan: Menggunakan lingkungan yang mendukung eksekusi kode Python, seperti Google Colaboratory atau Jupyter Notebook.
+5. Instalasi Library yang Dibutuhkan: Memastikan bahwa semua library Python yang digunakan dalam kode sudah terinstal. Berdasarkan import dalam kode, library yang dibutuhkan adalah:
    `pandas` untuk manipulasi data.
    `numpy` untuk komputasi numerik.
     `matplotlib.pyplot` untuk visualisasi dasar.
@@ -86,8 +90,8 @@ Tahapan persiapan yang diperlukan untuk menjalankan proyek ini meliputi:
    `LabelEncoder` dan `StandardScaler` dari `sklearn.preprocessing`
    `RandomForestClassifier` dari `sklearn.ensemble`
    `classification_report`, `confusion_matrix`, `accuracy_score` dari `sklearn.metrics`
-4. Pemahaman Dasar Python: Memiliki pemahaman dasar tentang sintaks dan struktur bahasa pemrograman Python.
-5. Pemahaman Dasar Konsep Data Science dan Machine Learning adapun proses cakupanya sebagai berikut:
+6. Pemahaman Dasar Python: Memiliki pemahaman dasar tentang sintaks dan struktur bahasa pemrograman Python.
+7. Pemahaman Dasar Konsep Data Science dan Machine Learning adapun proses cakupanya sebagai berikut:
 - **Import Library:**
 Tahap pertama dalam proyek ini adalah mengimpor library Python yang dibutuhkan. Library seperti pandas digunakan untuk manipulasi dan analisis data tabular, numpy untuk komputasi numerik, matplotlib.pyplot dan seaborn untuk visualisasi data. Selain itu, library dari sklearn diimpor untuk keperluan pemisahan data, *preprocessing*, pemodelan, dan evaluasi model. Penggunaan library ini sangat penting karena menyediakan fungsi-fungsi siap pakai yang mempercepat dan mempermudah proses pengolahan data, mulai dari membaca data, membersihkan data, hingga membangun dan mengevaluasi model machine learning.
 - **Load Dataset:**
