@@ -1,4 +1,4 @@
-# Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
+2# Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
 
 # **Bussines Understanding**
 Perusahaan Jaya Jaya Maju merupakan salah satu perusahaan multinasional yang telah berdiri sejak tahun 2000. Perusahaan ini memiliki lebih dari 1000 karyawan yang tersebar di berbagai wilayah di Indonesia. Seiring dengan pertumbuhan perusahaan yang semakin besar, tantangan dalam pengelolaan sumber daya manusia (SDM) pun semakin kompleks. Salah satu tantangan utama yang dihadapi adalah tingginya attrition rate, yaitu rasio jumlah karyawan yang keluar dibandingkan dengan total keseluruhan karyawan.
@@ -141,7 +141,20 @@ Dashboard ini dirancang tidak hanya untuk menyajikan data, tetapi juga untuk:
 1. Menjawab pertanyaan bisnis utama
 2. Mengungkap pola tersembunyi yang mungkin diabaikan secara manual
 3. Memberikan tindakan nyata berbasis insight bagi manajemen
+4. 
+Berdasarkan hasil analisis data attrition karyawan di perusahaan Jaya Jaya Maju, ditemukan beberapa insight penting yang dapat dijadikan dasar untuk pengambilan keputusan strategis oleh manajemen, khususnya dalam menekan tingkat attrition (turnover) karyawan:
 
+Lama Kerja dan Promosi Berpengaruh pada Attrition
+Karyawan dengan masa kerja pendek (0–5 tahun) dan yang belum mendapatkan promosi dalam 0–2 tahun terakhir memiliki jumlah attrition tertinggi. Hal ini menunjukkan bahwa karyawan baru yang tidak segera memperoleh pengembangan karier cenderung meninggalkan perusahaan lebih cepat. Menariknya, kelompok dengan masa kerja 6–10 tahun dan tanpa promosi selama 0–2 tahun terakhir juga menunjukkan lonjakan attrition yang signifikan, yang mengindikasikan pentingnya keberlanjutan jenjang karier, tidak hanya pada awal karier karyawan.
+
+Tingkat Penghasilan Mempengaruhi Loyalitas Karyawan
+Karyawan pada kelompok penghasilan menengah (medium income) menunjukkan tingkat attrition tertinggi dibandingkan kelompok lain. Meskipun kelompok penghasilan rendah memiliki jumlah karyawan dan kasus attrition tertinggi, rasio attrition tertinggi justru terdapat pada penghasilan menengah. Hal ini menandakan adanya potensi ketidakpuasan yang mungkin berasal dari mismatch antara beban kerja dan kompensasi, atau kurangnya insentif tambahan pada kelompok ini.
+
+Lembur (Overtime) Sangat Berkorelasi dengan Tingkat Attrition
+Karyawan yang rutin melakukan lembur (OverTime = Yes) memiliki jumlah attrition yang jauh lebih tinggi dibandingkan mereka yang tidak lembur. Ini menjadi sinyal kuat bahwa beban kerja berlebih tanpa kompensasi atau keseimbangan kerja-hidup yang baik menjadi faktor utama penyebab karyawan meninggalkan perusahaan.
+
+Jam Kerja dan Kepuasan terhadap Lingkungan Kerja
+(Berdasarkan grafik tambahan yang diunggah) Karyawan dengan tingkat kepuasan terhadap lingkungan kerja yang rendah cenderung memiliki tingkat attrition lebih tinggi. Ini memperkuat pentingnya menciptakan lingkungan kerja yang mendukung secara sosial dan profesional sebagai strategi retensi.
 **Akses akun metabase**
 
 **Email : dickysaragih050901@gmail.com**
